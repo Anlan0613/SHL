@@ -123,7 +123,7 @@ section a {
 /* 見出し */
 section h2 {
     margin-bottom: 0.5em;
-    width: 200px;
+    width: 100%;
     background-color: #000;
     text-align: center;
     font-size: 1em;
