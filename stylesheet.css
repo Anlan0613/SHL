@@ -35,7 +35,7 @@ body::before {
     z-index: -100;
     width: 100%;
     height: 100vh;
-    background: url('SanShengAhXu.HEIC') center/cover;
+    background: url('SanShengAhXu.jpg') center/cover;
     filter: blur(5px);
 }
 
@@ -50,7 +50,7 @@ header {
     margin: 10vh auto;
     width: 80%;
     min-height: 70vh;
-    background: url('HuShangDaXi.JPG') center/cover;
+    background: url('SanShengAhXu.JPG') center/cover;
     border: 10px solid #fff;
 }
 
