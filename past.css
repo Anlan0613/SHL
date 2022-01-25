@@ -1,6 +1,5 @@
 <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
 
-<style>
 @charset "UTF-8";
 
 /* Template & Designed by Towako. */
@@ -417,4 +416,29 @@ input[type=submit] {
     }
 }
 
-</style>
+   body {
+  -webkit-text-size-adjust: 100%;
+}
+
+ruby[data-ruby]
+{
+    position: relative;
+}
+ruby[data-ruby]::before
+{
+    content: attr(data-ruby);
+    position: absolute;
+    line-height: 100%;
+    text-align: center;
+    left: -3em;
+    right: -3em;
+    transform-origin: bottom center;
+    /* ルビの文字サイズを親文字に対する比率で指定 */
+    transform: scale(0.5);
+    /* 100%を越える部分が親文字とルビとのスペースになる。単位は親文字に対する比率 */
+    bottom: 90%;
+}
+ruby[data-ruby] rt
+{
+    display: none;
+}
