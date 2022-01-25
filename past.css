@@ -1,0 +1,420 @@
+<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+
+<style>
+@charset "UTF-8";
+
+/* Template & Designed by Towako. */
+/* https://ninawas.me */
+
+/* ウェブフォントの読み込み */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Overlock+SC&display=swap');
+
+/* 全体に適用する */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* 共通設定 */
+body {
+    text-align: center;
+    background-color: #fff;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    color: #000;
+}
+
+/* リンク基本設定 */
+a {
+    text-decoration: none;
+    transition: color .3s;
+    color: #000;
+}
+
+/* フォントの指定 */
+a,
+nav h2,
+section h2,
+section h3,
+.en {
+    font-family: 'Overlock SC', 'Noto Serif JP', serif;
+}
+
+/* ホバー */
+a:hover {
+    color: #192f60;
+}
+
+/* ヘッダー */
+header {
+    padding: 10vh 0;
+}
+
+header,
+nav,
+section,
+footer {
+    max-width: 700px;
+}
+
+header,
+header h1,
+nav,
+section {
+    margin: 0 auto;
+}
+
+/* 大見出し */
+header h1 {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    font-size: 1.1em;
+}
+
+header h1,
+nav h2 {
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+}
+
+header h1 span {
+    font-family: 'Hannari', 'Noto Serif JP', serif;
+}
+
+/* 見出しアニメーションひとつめ */
+header h1 a span:nth-of-type(1) {
+    animation: FadeIn 2s;
+}
+
+/* 見出しアニメーションふたつめ */
+header h1 a span:nth-of-type(2) {
+    animation: FadeIn 4s;
+}
+
+/* 見出しアニメーションみっつめ */
+header h1 a span:nth-of-type(3) {
+    animation: FadeIn 5s;
+}
+
+/* ヘッダー画像サイズ */
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* ヘッダーここまで */
+
+/* ナビゲーション */
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5vh;
+    padding: 0.8em 0 0.5em;
+    background: repeating-linear-gradient(-45deg, #fff 0, #fff 2px, #f6f6f6 2px, #f6f6f6 4px);
+}
+
+nav h2 {
+    position: relative;
+    margin-bottom: 0.4em;
+    line-height: 2;
+    font-size: 1.2em;
+}
+
+nav h2::before {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 20px;
+    background-color: #000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+/* ナビゲーションここまで */
+
+/* メイン直下のセクション */
+main > section {
+    padding: 20vh 3em 3em;
+    text-align: justify;
+    word-break: break-all;
+}
+
+/* セクション内セクション */
+section > section {
+    margin: 1.5em auto;
+}
+
+/* 見出し */
+section h2,
+section h3 {
+    font-size: 1.3em;
+}
+
+section h3 {
+    position: relative;
+    text-align: center;
+}
+
+section h3::before,
+section h3::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20%;
+    width: 35%;
+    background: repeating-linear-gradient(-45deg, #fff 0, #fff 2px, #f6f6f6 2px, #f6f6f6 4px);
+}
+
+section h3::before {
+    left: 0;
+}
+
+section h3::after {
+    right: 0;
+}
+
+/* 見出しここまで */
+
+/* セクション内リンク */
+section a {
+    font-weight: bold;
+    color: #dc9496;
+}
+
+/* セクション内共通設定 */
+section p,
+.scroll {
+    margin: 1em auto 1.5em;
+}
+
+section span,
+footer span {
+    border-bottom: thin dotted #000;
+}
+
+section mark {
+    padding: 0 0.5em;
+    background-color: #f6f6f6;
+}
+
+section strong {
+    color: #ff0000;
+}
+
+/* リスト系 */
+section dl,
+section ul,
+section ol {
+    margin: 1em auto;
+}
+
+section dd {
+    margin: 0 0 0.5em 2em;
+    font-size: 0.9em;
+    color: #808080;
+}
+
+section ul {
+    list-style-type: none;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: thin dotted #000;
+}
+
+section ol {
+    list-style-position: inside;
+    margin-left: 1em;
+}
+
+.float li {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.float::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* リストここまで */
+
+/* フッター */
+footer {
+    margin: 1em auto;
+    padding: 0.5em 0;
+}
+
+footer p {
+    margin: 0.5em auto;
+    font-size: 0.9em;
+    color: #808080;
+}
+
+/* 枠線リンク */
+.link {
+    display: inline-block;
+    margin: 0.2em auto;
+    padding: 0 0.5em;
+    transition: background-color .3s;
+    border: thin solid #dc9496;
+    background-color: #dc9496;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* ホバー */
+.link:hover {
+    border: thin solid #192f60;
+    background-color: #fff;
+}
+
+/* スクロールボックス */
+.box {
+    padding: 0.3em 2em;
+    border: thin solid #192f60;
+    background-color: #192f60;
+    font-size: 1.1em;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 100px;
+    padding: 0 2em;
+    background-color: #fbfbfb;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #192f60;
+    border-radius: 50px;
+}
+
+/* ボックスここまで */
+
+/* 中央揃え */
+.center {
+    text-align: center;
+}
+
+/* 右揃え */
+.right {
+    text-align: right;
+}
+
+/* アニメーション */
+@keyframes FadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/* フォーム系 */
+textarea,
+input[type] {
+    -webkit-appearance: none;
+    padding: 0.2em 0.5em;
+    background-color: #fff;
+    border: thin solid #000;
+    border-radius: 0;
+}
+
+textarea {
+    width: 280px;
+    height: 120px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #192f60;
+    border-radius: 50px;
+}
+
+input[type=text] {
+    width: 80px;
+}
+
+input[type=submit] {
+    width: auto;
+}
+
+/* フォーム系ここまで */
+
+/* 横幅768px以上で下記を読み込む */
+@media screen and (min-width:768px) {
+    body {
+        background: repeating-linear-gradient(-45deg, #fff 0, #fff 3px, #efefef 3px, #efefef 6px);
+    }
+
+    header,
+    section,
+    footer {
+        background-color: #fff;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav h2 {
+        font-size: 1.3em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    section > section {
+        width: 80%;
+    }
+
+    section h2,
+    section h3 {
+        font-size: 1.4em;
+    }
+}
+
+</style>
