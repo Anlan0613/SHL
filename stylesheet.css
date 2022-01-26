@@ -47,6 +47,10 @@ a {
 /* ヘッダー */
 header {
     position: relative;
+
+    object-fit: cover;
+    object-position: 50% 100%;
+
     margin: 10vh auto;
     width: 80%;
     min-height: 70vh;
