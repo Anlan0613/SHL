@@ -70,8 +70,8 @@ section {
 /* 大見出し */
 header h1 {
     display: inline-block;
-    writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     font-size: 1.1em;
 }
@@ -111,11 +111,14 @@ header img {
 
 /* ナビゲーション */
 nav {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 5vh;
-    padding: 0.8em 0 0.5em;
+    width: 100%;            /* 要素を幅いっぱいにする */
     background: repeating-linear-gradient(-45deg, #fff 0, #fff 2px, #f6f6f6 2px, #f6f6f6 4px);
+  display: none;          /* ページ読み込み時は非表示にする */
+  position: fixed;        /* ヘッダーを絶対位置にする。スクロールしても固定 */
+  top: 0;                 /* 上から0pxに指定 */
+  left: 0;                /* 左から0pxに指定 */
+  padding: 10px 20px;     /* ちょっと余白をとっとくと綺麗 */
+  box-sizing: border-box; /* paddingを含んで幅100%ちょうどにするため */
 }
 
 nav h2 {
@@ -150,7 +153,7 @@ nav ul li {
 
 /* メイン直下のセクション */
 main > section {
-    padding: 20vh 3em 3em;
+    padding: 10vh 3em 3em;
     text-align: justify;
     word-break: break-all;
 }
@@ -214,6 +217,20 @@ section mark {
     background-color: #f6f6f6;
 }
 
+section an {
+    padding: 0 0.5em;
+    border: thin solid #fff0f5;
+    background-color: #fff0f5;
+    font-weight: normal;
+}
+
+section ad {
+    padding: 0 0.5em;
+    border: thin solid #f0f8ff;
+    background-color: #f0f8ff;
+    font-weight: normal;
+}
+
 section strong {
     color: #ff0000;
 }
@@ -228,7 +245,7 @@ section ol {
 section dd {
     margin: 0 0 0.5em 2em;
     font-size: 0.9em;
-    color: #808080;
+    color: #696969;
 }
 
 section ul {
@@ -337,45 +354,6 @@ footer p {
         opacity: 1
     }
 }
-
-/* フォーム系 */
-textarea,
-input[type] {
-    -webkit-appearance: none;
-    padding: 0.2em 0.5em;
-    background-color: #fff;
-    border: thin solid #000;
-    border-radius: 0;
-}
-
-textarea {
-    width: 280px;
-    height: 120px;
-}
-
-textarea::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-textarea::-webkit-scrollbar-track {
-    border-radius: 50px;
-}
-
-textarea::-webkit-scrollbar-thumb {
-    background-color: #192f60;
-    border-radius: 50px;
-}
-
-input[type=text] {
-    width: 80px;
-}
-
-input[type=submit] {
-    width: auto;
-}
-
-/* フォーム系ここまで */
 
 /* 横幅768px以上で下記を読み込む */
 @media screen and (min-width:768px) {
