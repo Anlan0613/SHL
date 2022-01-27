@@ -170,7 +170,7 @@ nav h2 a {
 
 /* メイン直下のセクション */
 main > section {
-    padding: 10vh 3em 3em;
+    padding: 5vh 3em 3em;
     text-align: justify;
     word-break: break-all;
 }
