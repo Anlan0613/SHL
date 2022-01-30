@@ -178,6 +178,10 @@ section dd {
     padding-left: 1em;
 }
 
+section p.mb0 {
+    margin-top: 0.5em;
+}
+
 /* 右揃え */
 div.right {
     text-align: right;
