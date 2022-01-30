@@ -164,10 +164,6 @@ section dt {
     padding-left: 1em;
     width: 200px;
 
-section dt.mt0 {
-    margin-top: 0.5em;
-}
-
 section dt span.white {
     color: #fff;
 }
@@ -179,6 +175,10 @@ section dt a {
 
 section dd {
     padding-left: 1em;
+}
+
+section dd.mt0 {
+    margin-top: 0.5em;
 }
 
 section li.mt0 {
